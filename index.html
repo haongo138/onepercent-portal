@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The 1%" />
+    <meta name="keywords" content="The 1%" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The 1%</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <style>
+      .bounce {
+        animation: bounce 2s ease infinite;
+      }
+      @keyframes bounce {
+        70% {
+          transform: translateY(0%);
+        }
+        80% {
+          transform: translateY(-15%);
+        }
+        90% {
+          transform: translateY(0%);
+        }
+        95% {
+          transform: translateY(-7%);
+        }
+        97% {
+          transform: translateY(0%);
+        }
+        99% {
+          transform: translateY(-3%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .bounce2 {
+        animation: bounce2 2s ease infinite;
+      }
+      @keyframes bounce2 {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+      .gelatine {
+        animation: gelatine 0.5s infinite;
+      }
+      @keyframes gelatine {
+        from,
+        to {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(0.9, 1.1);
+        }
+        50% {
+          transform: scale(1.1, 0.9);
+        }
+        75% {
+          transform: scale(0.95, 1.05);
+        }
+      }
+      .pulse {
+        animation: pulse 1s infinite ease-in-out alternate;
+      }
+      @keyframes pulse {
+        from {
+          transform: scale(0.8);
+        }
+        to {
+          transform: scale(1.2);
+        }
+      }
+      .shake {
+        animation: shake 2s ease infinite;
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translateX(10px);
+        }
+      }
+      .hinge {
+        animation: hinge 2s ease infinite;
+      }
+      @keyframes hinge {
+        0% {
+          transform: rotate(0);
+          transform-origin: top left;
+          animation-timing-function: ease-in-out;
+        }
+        20%,
+        60% {
+          transform: rotate(80deg);
+          transform-origin: top left;
+          animation-timing-function: ease-in-out;
+        }
+        40% {
+          transform: rotate(60deg);
+          transform-origin: top left;
+          animation-timing-function: ease-in-out;
+        }
+        80% {
+          transform: rotate(60deg) translateY(0);
+          opacity: 1;
+          transform-origin: top left;
+          animation-timing-function: ease-in-out;
+        }
+        100% {
+          transform: translateY(700px);
+          opacity: 0;
+        }
+      }
+      .wobble {
+        animation: wobble 2s ease infinite;
+      }
+      @keyframes wobble {
+        0% {
+          transform: translateX(0%);
+        }
+        15% {
+          transform: translateX(-25%) rotate(-5deg);
+        }
+        30% {
+          transform: translateX(20%) rotate(3deg);
+        }
+        45% {
+          transform: translateX(-15%) rotate(-3deg);
+        }
+        60% {
+          transform: translateX(10%) rotate(2deg);
+        }
+        75% {
+          transform: translateX(-5%) rotate(-1deg);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <img src="img/logo.webp" alt="" width="30px"/>
+              <a href="#" target="_blank" rel="noopener noreferrer">Raca Sniper Bot</a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#toki">Tokenomics</a></li>
+                  <li><a href="#">Whitepaper</a></li>
+                  <li>
+                    <a href="https://t.me">Telegram</a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com">Twitter</a>
+                  </li>
+                  <!-- <li><a href="https://t.me/TheAllianceETH"><img src="/img/telegram (2).svg" alt="" srcset=""></a></li> -->
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://t.me"><i class="fa fa-telegram"></i></a>
+
+                <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero" style="background-color: black">
+      <div class="hero__slider owl-carousel">
+        <div class="hero__item set-bg" style="">
+          <div class="container">
+            <div class="row">
+              <img
+                src="img/logo.webp"
+                class="col-lg-6 bounce2"
+                alt=""
+                width=""
+              />
+              <div class="col-lg-6">
+                <div class="hero__text" style="margin-bottom: 50px">
+                  <span></span>
+                  <h2 style="color: #ef3fa6">
+                    "The 1%" - Your Path to the New Elite!
+                  </h2>
+                  <p style="color: white">
+                    Are you ready to join the ranks of the new 1% in the crypto
+                    world? "The 1%" is here to create a new set of elite
+                    individuals who dare to take risks and embrace the power of
+                    action!
+                  </p>
+
+                  <p style="color: white">
+                    CONTRACT ADDRESS :
+                    <span>
+                      <a
+                        style="color: #ef3fa6; word-break: break-all"
+                        href="https://app.uniswap.org"
+                        >0x000000000000000000000000000000000000000</a
+                      >
+                    </span>
+                  </p>
+                  <a href="https://app.uniswap.org" class="primary-btn"
+                    >Buy Now On Uniswap</a
+                  >
+                </div>
+              </div>
+              <!-- <div class="col-lg-6">
+                <div style="width: 280px; margin: 0 auto">
+                  <img src="img/logo.webp" alt="" srcset="" />
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- ===================================== -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad" style="background-color: #070707">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="callto__text">
+              <h2 style="font-family: Josefin Sans !important">
+                Less Talking, More Action: We believe in making things happen!
+                Instead of just discussing potential gains, we encourage our
+                community to take action by investing and buying "The 1%" to be
+                part of this thrilling journey.
+                <br /><br />
+                <img
+                  src="img/welcome.gif"
+                  alt=""
+                  width=""
+                  style="width: 100%"
+                />
+                <br /><br />
+                Redefine Wealth: Just like the world's 1%, we aim to redefine
+                wealth in the crypto space. By holding "The 1%," you become part
+                of an exclusive group with the potential to grow your fortunes
+                exponentially.
+                <br /><br />
+                <img
+                  src="img/2.jpg"
+                  class="shake"
+                  alt=""
+                  width=""
+                  style="width: 100%"
+                />
+                <br /><br />
+                Global Community: Join a diverse and vibrant community of
+                like-minded individuals from around the world. Together, we will
+                support each other on this exciting path towards financial
+                freedom.
+                <br /><br />
+                <img
+                  src="img/1.jpg"
+                  class="shake"
+                  alt=""
+                  width=""
+                  style="width: 100%"
+                />
+                <br /><br />
+                Rewarding Hodlers: HODL "The 1%," and you'll be rewarded with
+                our unique tokenomics. Earn passive income through reflections
+                and watch your holdings grow!
+                <br /><br />
+                <img
+                  src="img/3.jpg"
+                  class="shake"
+                  alt=""
+                  width=""
+                  style="width: 100%"
+                />
+                <br /><br />
+                Secure and Transparent: Our smart contract is audited and
+                designed to prioritize security, ensuring a safe investment
+                environment. Transparency is our priority, and our team is
+                committed to keeping you informed every step of the way.
+                <br /><br />
+                <img
+                  src="img/5.jpg"
+                  class="shake"
+                  alt=""
+                  width=""
+                  style="width: 100%"
+                />
+                <br /><br />
+                Visionary Roadmap: We have a clear vision and roadmap to guide
+                us towards success. Expect exciting updates, partnerships, and
+                game-changing innovations on our journey to the top.
+              </h2>
+              <a href="https://t.me">Join The Community</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT SECTION -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="services__title">
+              <div class="section-title">
+                <!-- <span>Follow The Steps</span> -->
+                <h2>About Us:</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+                  <!-- <h4>Phase 1</h4> -->
+                  <br />
+                  <p>
+                    The 1% is a decentralized finance (DeFi) token built on the
+                    Ethereum network using the ERC-20 standard. This means that
+                    it can be stored in any wallet that supports ERC-20 tokens
+                    and traded on any exchange that lists it.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+                  <!-- <h4>Phase 2 </h4> -->
+                  <br />
+                  <p>
+                    The 1% aims to establish itself as the king of memes and
+                    Twitter, given that Doge is a well-known and popular meme on
+                    the internet. The hashtag #The 1% is used to promote the
+                    token and its community.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+
+                  <!-- <h4>Phase 3</h4> -->
+                  <br />
+                  <p>
+                    The 1% seeks to create a new kind of atmosphere in the DeFi
+                    space, possibly by leveraging the power of memes and social
+                    media to build a strong and engaged community around the
+                    token. The success of this strategy could make The 1% a
+                    game-changer for investors.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+
+                  <!-- <h4>Phase 4</h4> -->
+                  <br />
+                  <p>
+                    The 1%'s success in the long run will depend on its ability
+                    to deliver real value to its users and investors. This may
+                    include building useful applications on top of its token,
+                    creating partnerships with other DeFi projects, and
+                    fostering a vibrant ecosystem of developers, users, and
+                    investors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://app.uniswap.org" class="primary-btn">Uniswap</a>
+        <br />
+        <a href="https://dextools.io" class="primary-btn">Dextools Chart</a>
+      </div>
+    </section>
+
+    <!-- Services Section Begin -->
+
+    <!-- Services Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter" id="toki">
+      <div class="container">
+        <div class="counter__content">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item">
+                <div class="counter__item__text">
+                  <img
+                    src="img/icons/ci-1.png"
+                    style="filter: grayscale(90%)"
+                    alt=""
+                  />
+                  <h2 class="counter_num">1B</h2>
+                  <p>Total Supply</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item second__item">
+                <div class="counter__item__text">
+                  <img
+                    src="img/icons/ci-2.png"
+                    style="filter: grayscale(90%)"
+                    alt=""
+                  />
+                  <h2>3%</h2>
+                  <p>3% Tax on Buy & Sell</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item third__item">
+                <div class="counter__item__text">
+                  <img
+                    src="img/icons/ci-3.png"
+                    style="filter: grayscale(90%)"
+                    alt=""
+                  />
+                  <h2>1%</h2>
+                  <p>LP</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item four__item">
+                <div class="counter__item__text">
+                  <img
+                    src="img/icons/ci-4.png"
+                    style="filter: grayscale(90%)"
+                    alt=""
+                  />
+                  <h2>2%</h2>
+                  <p>Marketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="services__title">
+              <div class="section-title">
+                <!-- <span>Follow The Steps</span> -->
+                <h2>RoadMap</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+                  <h4>Phase 1</h4>
+                  <p>
+                    - Contract Deployment <br />
+                    - Liquidity Acquisition <br />
+                    - Website Live <br />
+                    - Dextools Update <br />
+
+                    - First Buybacks Initiated <br />
+                    - Litepaper Release <br />
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+                  <h4>Phase 2</h4>
+                  <p>
+                    - CG and CMC Applied <br />
+                    - Blog posts pushed <br />
+
+                    - Marketing Push <br />
+
+                    - First AMA with Team <br />
+                    - Billboards (Vegas, NY) <br />
+                    - CEX<br />
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+
+                  <h4>Phase 3</h4>
+                  <p>
+                    - Partnerships<br />
+
+                    - 50% of The 1%s burned <br />
+                    - Huge Marketing Campaign <br />
+                    - Trending <br />
+                    - Influencer module Application <br />
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="/img/logo.webp" alt="" />
+                  </div>
+
+                  <h4>Phase 4</h4>
+                  <p>
+                    - Snag It bot Update subscription based <br />
+                    - Marketing Bot <br />
+                    - 1000+ holders <br />
+                    - 75% of The 1%s burned from supply <br />
+                    - Replenish lq with subscription and marketing fees <br />
+                    - CEX <br />
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <a href="https://app.uniswap.org" class="primary-btn">Uniswap</a>
+        <br />
+        <a href="https://dextools.io" class="primary-btn">Dextools Chart</a>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__logo">
+                <a href="#"><img src="img/logo.webp" alt="" width="34px" /></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__social">
+                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://t.me"><i class="fa fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__option">
+          <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-6">
+              <div class="footer__option__item">
+                <h5 style="color: #ef3fa6">Disclaimer</h5>
+                <p>
+                  Like any other investment, investing in The 1% carries risks,
+                  including volatility, liquidity, and regulatory risks. It is
+                  important for investors to do their own research, understand
+                  the risks involved, and make informed decisions before
+                  investing in The 1% or any other cryptocurrency.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="footer__option__item">
+                <h5 style="color: #ef3fa6">About Us</h5>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li>
+                    <a href="https://t.me">Telegram</a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="https://dextools.io">Chart</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="footer__option__item">
+                <h5 style="color: #ef3fa6">Check us at :</h5>
+                <ul>
+                  <li>
+                    <a href="https://app.uniswap.org">Uniswap</a>
+                  </li>
+                  <li>
+                    <a href="https://www.dextools.io">Dextools</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p class="footer__copyright__text">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This website is made with
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <a href="#" target="_blank">The 1%</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
